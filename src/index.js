@@ -2,12 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-
-
+import ADprovider from './contextFiles';
+import UIprovider from './contextFiles';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <UIprovider>
+    <ADprovider>
     <App />
+    </ADprovider>
+     </UIprovider>
   </React.StrictMode>
 );
 
