@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import './App.css';
-import Vote from "./components/Vote";
-import TotalVotes from "./components/TotalVotes";
 function App() {
   const[formShow,showFormHandler]=useState(false);
   const addHandler=(event)=>{
@@ -14,7 +12,7 @@ function App() {
       </div>
       <TotalVotes/>
       <button type="button" onClick={addHandler}>Add New Vote</button>
-      {formShow && <Vote/>}
+      {formShow && <VoteForm/>}
     </div>
   );
 }
