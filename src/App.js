@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <h1 style={{textAlign:'center'}}>Class Monitor Vote</h1>
-      <p>Total Votes:{totalData}</p>
+      <h2>Total Votes:{totalData}</h2>
       <button type="button" onClick={openModal}>Add New Vote</button>
       {openForm && <VoteForm/>}
       <VoteList/>

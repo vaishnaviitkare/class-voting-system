@@ -1,8 +1,16 @@
 .App {
   text-align: center;
-  
+  background-image: url("/public/Image/class.avif");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
-
+.App button{
+  padding: 5px 20px;
+    height:30px;
+    border-radius: 10px;
+    background-color: rgb(123, 123, 244);
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -9,10 +9,10 @@ return(
         Object.keys(votesData).map((name)=>(
             <div className={classes.sublist}>
             <h2>{name}</h2>
-            <p>Total {votesData[name].length}</p>
+            <h3>Total {votesData[name].length}</h3>
             {votesData[name].map((stdName)=>(
-                <div>
-               <span>{stdName}</span>
+                <div className={classes.l1}>
+               <span style={{fontWeight:"bold"}}>{stdName}</span>
                &nbsp;
                <button onClick={()=>deleteVote(name,stdName)}>Delete</button>
                </div>
