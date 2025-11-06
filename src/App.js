@@ -3,6 +3,7 @@ import {UIContext} from './contextFiles/UIContext';
 import { VoteContext } from "./contextFiles/VoteContext";
 import VoteForm from "./components/VoteForm";
 import './App.css';
+import VoteList from "./components/VoteList";
 function App() {
   const {openModal,openForm}=useContext(UIContext);
   const{votesData}=useContext(VoteContext);
@@ -15,6 +16,7 @@ function App() {
       <p>Total Votes:{totalData}</p>
       <button type="button" onClick={openModal}>Add New Vote</button>
       {openForm && <VoteForm/>}
+      <VoteList/>
     </div>
   );
 }

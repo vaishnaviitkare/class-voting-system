@@ -4,8 +4,8 @@ export const VoteContext=React.createContext();
 export const ADProvider=(props)=>{
 const [votesData,setVotesData]=useState({
 Suresh:[],
-deepak:[],
-Abhi:[],
+Abhijeet:[],
+Ishan:[],
 });
 const addVote=(stdName,monitorName)=>{
 setVotesData((prev)=>({
