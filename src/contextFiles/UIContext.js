@@ -1,6 +1,6 @@
-import React, { createContext, useState } from "react";
+import React, {useState } from "react";
 export const UIContext=React.createContext();
-const UIprovider=(props)=>{
+export const UIProvider=(props)=>{
     const[openForm,setOpenForm]=useState(false);
     const openModal=()=>{
      setOpenForm(true);

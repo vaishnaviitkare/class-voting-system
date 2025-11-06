@@ -1,7 +1,7 @@
-import { createContext, useState } from "react";
+import {useState } from "react";
 import React from "react";
 export const VoteContext=React.createContext();
-const ADprovider=(props)=>{
+export const ADProvider=(props)=>{
 const [votesData,setVotesData]=useState({
 Suresh:[],
 deepak:[],
@@ -16,7 +16,7 @@ setVotesData((prev)=>({
 const deleteVote=(monitorName,stdName)=>{
   setVotesData((prev)=>({
      ...prev,
-     [monitorName]:prev[monitorName].filter((name)=>name!=stdName),
+     [monitorName]:prev[monitorName].filter((name)=>name!==stdName),
   }))
 };
 

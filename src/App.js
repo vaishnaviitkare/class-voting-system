@@ -1,12 +1,13 @@
-import React, { useContext, useState } from "react";
-import {UIContext} from './contextFiles/UI-context';
-import { VoteContext } from "./contextFiles/AD-context";
+import React, { useContext } from "react";
+import {UIContext} from './contextFiles/UIContext';
+import { VoteContext } from "./contextFiles/VoteContext";
+import VoteForm from "./components/VoteForm";
 import './App.css';
 function App() {
   const {openModal,openForm}=useContext(UIContext);
   const{votesData}=useContext(VoteContext);
   const totalData=Object.values(votesData).reduce((total,arr)=>{
-      total=total+arr.length;
+      return total=total+arr.length;
   },0)
   return (
     <div className="App">

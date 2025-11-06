@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import { UIProvider } from './contextFiles/UIContext';
+import { ADProvider } from './contextFiles/VoteContext';
 import App from './App';
-import ADprovider from './contextFiles';
-import UIprovider from './contextFiles';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <UIprovider>
-    <ADprovider>
+    <UIProvider>
+    <ADProvider>
     <App />
-    </ADprovider>
-     </UIprovider>
+    </ADProvider>
+     </UIProvider>
   </React.StrictMode>
 );
 
