@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import ReactDOM from "react-dom";
+import { UIContext } from "../contextFiles/UIContext";
 import classes from "./Modal.module.css";
     const Backdrop=(props)=>{
+        const {closeModal}=useContext(UIContext);
         return(
-     <div className={classes.backdrop}>
+     <div className={classes.backdrop} onClick={closeModal}>
 
      </div>
         )

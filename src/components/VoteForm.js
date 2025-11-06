@@ -39,7 +39,7 @@ const VoteForm=(props)=>{
             &nbsp;
             <button type="submit">Vote</button>
             &nbsp;
-            <button type="cancel">✖</button>
+            <button type="cancel" onClick={closeModal}>✖</button>
         </form>    
         </Modal>
     )
