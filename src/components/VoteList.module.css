@@ -1,6 +1,26 @@
 .list{
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40rem;
+  background-color: rgb(239, 243, 239);
+  height: max-content;
+  margin: 0 auto;     
+  border-radius: 15px;
+  margin-top: 100px;
 }
+.sublist {
+  border-bottom: 2px solid rgb(210, 207, 207);   
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+.sublist h3{
+    color: rgb(142, 109, 109);
+}
+.sublist:last-child {
+  border-bottom: none;
+}
+
 .l1 button{
     padding: 5px 20px;
     height:30px;
