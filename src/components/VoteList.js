@@ -6,12 +6,12 @@ const VoteList=(props)=>{
 return(
     <div className={classes.list}>
      {
-        Object.keys(votesData).map((name)=>(
-            <div className={classes.sublist}>
+        Object.keys(votesData).map((name,index)=>(
+            <div className={classes.sublist} key={index}>
             <h2>{name}</h2>
             <h3>Total {votesData[name].length}</h3>
-            {votesData[name].map((stdName)=>(
-                <div className={classes.l1}>
+            {votesData[name].map((stdName,index)=>(
+                <div className={classes.l1} key={index}>
                <span style={{fontWeight:"bold"}}>{stdName}</span>
                &nbsp;
                <button onClick={()=>deleteVote(name,stdName)}>Delete</button>
