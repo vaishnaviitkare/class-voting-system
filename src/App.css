@@ -1,7 +1,5 @@
 .App {
   text-align: center;
-  background-image: url("/public/Image/class.avif");
-  background-size: cover;
   background-position: center;
   height: 100vh;
 }
@@ -11,11 +9,33 @@
     border-radius: 10px;
     background-color: rgb(123, 123, 244);
 }
+.bg-section {
+  background-image: url("./assets/class.avif");
+  background-size: cover;      
+  background-position: center; 
+  background-repeat: no-repeat;
+  
+  padding: 40px 20px;         
+  height: 100%;           
+
+  color: rgb(11, 1, 1);                
+}
+
+.App button:hover{
+  background-color: blue;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+.vote{
+  margin-top: 10px;
+}
+.vote h2 {
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+  font-weight: bold;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

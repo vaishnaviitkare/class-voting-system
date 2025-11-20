@@ -7,3 +7,6 @@
     border-radius: 10px;
     background-color: rgb(123, 123, 244);
 }
+.l1 button:hover{
+    background-color: blue;
+}
